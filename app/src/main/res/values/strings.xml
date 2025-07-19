@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">paseLista</string>
+    <string name="sign_in">Sing In</string>
+    <string name="sign_up">Sing Up</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesion</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="login_with">Iniciar sesión usando</string>
+    <string name="content_desc_forgot_password">Se le olvido la contra xd</string>
+    <string name="content_desc_google">Iniciar sesión con Google</string>
+    <string name="content_desc_apple">Iniciar sesión con Apple</string>
+    <string name="content_desc_facebook">Iniciar sesión con Facebook</string>
+    <string name="new_user_register">Eres nuevo? Registrate aquí</string>
+    <string name="content_desc_register">Registro nuevo</string>
+
+    <string name="full_name">Nombre completo</string>
+    <string name="e_mail">Ejemplo@gmail.com</string>
+    <string name="pasword">Ingrese una contraseña</string>
+    <string name="confirm_password">Confirme la contraseña</string>
+    <string name="btnSign_ip">Registrarse</string>
 </resources>
