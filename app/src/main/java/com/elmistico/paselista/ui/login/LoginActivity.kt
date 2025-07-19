@@ -1,4 +1,4 @@
-package com.elmistico.paselista.ui.Login
+package com.elmistico.paselista.ui.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.elmistico.paselista.R
+import com.elmistico.paselista.ui.registro.RegistroActivity
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

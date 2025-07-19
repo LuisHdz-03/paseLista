@@ -1,4 +1,4 @@
-package com.elmistico.paselista.ui.Login
+package com.elmistico.paselista.ui.registro
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
