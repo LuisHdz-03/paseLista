@@ -25,17 +25,11 @@
     <string name="nav_asistencias">Asistencias</string>
     <string name="nav_reportes">Reportes</string>
 
-    <string name="ejemplo_nombre">Nombre: %1$s</string>
-    <string name="ejemplo_matricula">Matricula: %1$d</string>
-    <string name="ejemplo_periodo">Periodo: %1$s</string>
     <string name="resasistencias">Resumen de asistencias</string>
-    <string name="ejem_asistencias">Asistencias: %1$d</string>
-    <string name="ejem_retardos">Retardos:%1$d</string>
-    <string name="ejem_inasistencias">Inasistencias: %1$d</string>
     <string name="refaltas">Resumen: Faltas de tareas</string>
-    <string name="ejem_asignadasT">Tareas asignadas: %1$d</string>
-    <string name="ejem_faltasT">Tareas no entregadas: %1$d</string>
     <string name="reincidencias">Resumen: Incidencias</string>
-    <string name="ejem_incidenciasMin">Incidencias menores: %1$d</string>
-    <string name="ejem_incidenciasM">Incidencias mayores: %1$d</string>
+
+    <string name="infocrede">Informacion sobre la credencial</string>
+    <string name="print_id">Imprimir credencial</string>
+    <string name="act_datos">Actualizar datos</string>
 </resources>

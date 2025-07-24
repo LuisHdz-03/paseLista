@@ -33,7 +33,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/ejemplo_nombre"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -43,14 +43,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/ejemplo_matricula"
+                    android:text=""
                     android:textColor="@color/white" />
 
                 <TextView
                     android:id="@+id/tv_periodo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ejemplo_periodo"
+                    android:text=""
                     android:textColor="@color/white" />
 
                 <ImageView
@@ -90,7 +90,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/ejem_asistencias"
+                    android:text=""
                     android:textColor="@color/white" />
 
                 <TextView
@@ -98,7 +98,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/ejem_retardos"
+                    android:text=""
                     android:textColor="@color/white" />
 
                 <TextView
@@ -106,7 +106,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/ejem_inasistencias"
+                    android:text=""
                     android:textColor="@color/white" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -132,22 +132,24 @@
                     android:text="@string/refaltas"
                     android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_asignadasT"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/ejem_asignadasT"
-                    android:textColor="@color/white"
-                    />
+                    android:text=""
+                    android:textColor="@color/white" />
+
                 <TextView
                     android:id="@+id/tv_faltasT"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/ejem_faltasT"
-                    android:textColor="@color/white"/>
+                    android:text=""
+                    android:textColor="@color/white" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -155,24 +157,24 @@
                     android:layout_marginBottom="8dp"
                     android:text="@string/reincidencias"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_incidenciasMin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/ejem_incidenciasMin"
-                    android:textColor="@color/white"/>
+                    android:text=""
+                    android:textColor="@color/white" />
+
                 <TextView
                     android:id="@+id/tv_incidenciasM"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/ejem_incidenciasM"
-                    android:textColor="@color/white"/>
-
-
+                    android:text=""
+                    android:textColor="@color/white" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
