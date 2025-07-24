@@ -29,6 +29,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.registro.RegistroActivity" android:exported="false"/>
+        <activity android:name=".ui.alumno.AlumnoHomeActivity" android:exported="false"/>
+
     </application>
 
 </manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_inicio" />
+    <item
+        android:id="@+id/nav_credencial"
+        android:icon="@drawable/ic_credencial"
+        android:title="@string/nav_credencial" />
+    <item
+        android:id="@+id/nav_asistencias"
+        android:icon="@drawable/ic_asistencia"
+        android:title="@string/nav_asistencias" />
+    <item
+        android:id="@+id/nav_reportes"
+        android:icon="@drawable/ic_reporte"
+        android:title="@string/nav_reportes" />
+
+</menu>

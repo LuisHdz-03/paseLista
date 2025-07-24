@@ -2,6 +2,7 @@ package com.elmistico.paselista.ui.login
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.elmistico.paselista.R
+import com.elmistico.paselista.ui.alumno.AlumnoHomeActivity
 import com.elmistico.paselista.ui.registro.RegistroActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -17,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_login)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -27,6 +29,7 @@ class LoginActivity : AppCompatActivity() {
         val fbBtn = findViewById<ImageView>(R.id.imageView3)
         val forgot = findViewById<TextView>(R.id.textView3)
         val textViewRegistrer = findViewById<TextView>(R.id.textViewRegistrer)
+        val btnLogin = findViewById<Button>(R.id.buttonLogin)
 
         googleBtn.setOnClickListener{
             Toast.makeText(this, "Iniciar sesión con Google", Toast.LENGTH_SHORT).show()
@@ -45,5 +48,11 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, RegistroActivity::class.java)
             startActivity(intent)
         }
+
+        btnLogin.setOnClickListener{
+            val intent = Intent(this, AlumnoHomeActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
