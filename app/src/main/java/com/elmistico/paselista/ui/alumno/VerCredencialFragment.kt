@@ -1,14 +1,14 @@
 package com.elmistico.paselista.ui.alumno
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.elmistico.paselista.R
+import com.elmistico.paselista.ui.alumno.ActualizaDatosFragment
 
 class VerCredencialFragment : Fragment() {
     data class AlumnoInfo(
@@ -42,9 +42,15 @@ class VerCredencialFragment : Fragment() {
         view.findViewById<TextView>(R.id.tv_tutor).text = "Tutor:\n${alumno.Tutor}"
         view.findViewById<TextView>(R.id.tv_vigencia).text = "Vigencia:\n${alumno.Vigencia}"
 
+        view.findViewById<Button>(R.id.btn_actualizar)?.setOnClickListener{
+            val actualizarFragment = ActualizaDatosFragment()
 
-        // Imagen de QR
-        //view.findViewById<ImageView>(R.id.image_qr).setImageResource(R.drawable.ic_qr_placeholder)
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, actualizarFragment)
+                .addToBackStack(null)
+                .commit()
+
+        }
 
         return view
     }
