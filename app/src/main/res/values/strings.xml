@@ -37,4 +37,7 @@
     <string name="btndescrip">Regresar pa atras</string>
     <string name="nomtutor">Nombre del tutor</string>
     <string name="actualizar">Actualizar</string>
+    <string name="imgalumno">Imagen del alumno</string>
+    <string name="txtalumno">Sube una imagen del alumno</string>
+    <string name="selctimgalumno">Seleccionar Imagen</string>
 </resources>

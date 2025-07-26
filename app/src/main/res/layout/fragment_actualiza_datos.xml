@@ -63,11 +63,47 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/image_preview"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:contentDescription="@string/imgalumno"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_image_placeholder" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="@string/txtalumno"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/btn_subir_imagen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:backgroundTint="@color/colorDos"
+                            android:text="@string/selctimgalumno"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
-                        android:hint="@string/nomtutor">
+                        android:hint="@string/nomtutor"
+                        android:orientation="horizontal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/et_nombre"
@@ -79,11 +115,11 @@
                     <Button
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/actualizar"
-                        android:textSize="16sp"
-                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"
                         android:background="@color/colorDos"
-                        android:layout_marginTop="20dp"/>
+                        android:text="@string/actualizar"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
                 </LinearLayout>
 
             </LinearLayout>

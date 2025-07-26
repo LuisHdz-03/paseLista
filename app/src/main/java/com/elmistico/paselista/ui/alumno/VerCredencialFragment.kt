@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.elmistico.paselista.R
-import com.elmistico.paselista.ui.alumno.ActualizaDatosFragment
 
 class VerCredencialFragment : Fragment() {
     data class AlumnoInfo(

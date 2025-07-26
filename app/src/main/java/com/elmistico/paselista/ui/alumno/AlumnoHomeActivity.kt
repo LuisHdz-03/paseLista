@@ -24,8 +24,8 @@ class AlumnoHomeActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.nav_home -> loadFragment(homeFragment())
                 R.id.nav_credencial -> loadFragment(VerCredencialFragment())
-                /** R.id.nav_asistencias -> loadFragment(VerAsistenciasFragment())
-                R.id.nav_reportes -> loadFragment(VerReportesFragment())*/
+                R.id.nav_asistencias -> loadFragment(asistenciasFragment())
+                R.id.nav_reportes -> loadFragment(ReportesFragment())
             }
             true
         }
