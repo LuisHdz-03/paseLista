@@ -40,4 +40,5 @@
     <string name="imgalumno">Imagen del alumno</string>
     <string name="txtalumno">Sube una imagen del alumno</string>
     <string name="selctimgalumno">Seleccionar Imagen</string>
+
 </resources>
