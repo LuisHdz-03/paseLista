@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.elmistico.paselista.R
 
-
 data class AsistenciaMateria(
     val materia: String,
     val asistencias: Int,
@@ -33,7 +32,7 @@ class asistenciasFragment : Fragment() {
             AsistenciaMateria("Física", 18, 2, 4),
             AsistenciaMateria("Programación", 22, 1, 1)
         )
-            rcview.adapter = AsiAdapt(materias)
+        rcview.adapter = AsiAdapt(materias)
 
         return view
     }
