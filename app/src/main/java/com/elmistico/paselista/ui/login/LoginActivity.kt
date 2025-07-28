@@ -12,6 +12,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.elmistico.paselista.R
 import com.elmistico.paselista.ui.alumno.AlumnoHomeActivity
+import com.elmistico.paselista.ui.docente.DocenteHomeActivity
 import com.elmistico.paselista.ui.registro.RegistroActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -50,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnLogin.setOnClickListener{
-            val intent = Intent(this, AlumnoHomeActivity::class.java)
+            val intent = Intent(this, DocenteHomeActivity::class.java)
             startActivity(intent)
         }
 
