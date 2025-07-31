@@ -9,7 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="Link_color">#F5F5F5</color>
 
-    <color name="colorUno">#283b48</color>
+    <color name="guinda">#800000</color>
+
+    <color name="colorUno">#99000000</color>
     <color name="colorDos">#00a6c0</color>
     <color name="colorTres">#222831</color>
 </resources>
