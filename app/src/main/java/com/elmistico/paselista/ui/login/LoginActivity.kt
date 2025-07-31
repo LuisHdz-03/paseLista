@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
         txtforgot.setOnClickListener {
-            Toast.makeText(this, "Olvidate tu contra???", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "como tu te iama io no c", Toast.LENGTH_SHORT).show()
         }
 
     }
