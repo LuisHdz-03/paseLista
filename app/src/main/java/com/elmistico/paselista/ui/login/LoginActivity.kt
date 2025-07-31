@@ -3,6 +3,8 @@ package com.elmistico.paselista.ui.login
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,11 +22,15 @@ class LoginActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val txtforgot = findViewById<TextView>(R.id.textView3)
         val btnLogin = findViewById<Button>(R.id.buttonLogin)
 
-        btnLogin.setOnClickListener{
+        btnLogin.setOnClickListener {
             val intent = Intent(this, AlumnoHomeActivity::class.java)
             startActivity(intent)
+        }
+        txtforgot.setOnClickListener {
+            Toast.makeText(this, "Olvidate tu contra???", Toast.LENGTH_SHORT).show()
         }
 
     }
