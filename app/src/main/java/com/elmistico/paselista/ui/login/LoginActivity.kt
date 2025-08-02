@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.elmistico.paselista.R
 import com.elmistico.paselista.ui.alumno.AlumnoHomeActivity
+import com.elmistico.paselista.ui.docente.DocenteHomeActivity
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
         val btnLogin = findViewById<Button>(R.id.buttonLogin)
 
         btnLogin.setOnClickListener {
-            val intent = Intent(this, AlumnoHomeActivity::class.java)
+            val intent = Intent(this, DocenteHomeActivity::class.java)
             startActivity(intent)
         }
         txtforgot.setOnClickListener {
