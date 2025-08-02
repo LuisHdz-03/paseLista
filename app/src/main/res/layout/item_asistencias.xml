@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp"
-        android:background="@color/colorUno">
+        android:background="@color/guinda">
 
         <TextView
             android:id="@+id/tv_materia"

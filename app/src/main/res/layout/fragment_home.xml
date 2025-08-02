@@ -3,7 +3,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_alumnos"
+    android:background="@color/white_dark"
     android:padding="16dp">
 
     <LinearLayout
@@ -23,7 +23,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorUno"
+                android:background="@color/guinda"
                 android:orientation="vertical"
                 android:padding="16dp">
 
@@ -71,7 +71,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorUno"
+                android:background="@color/guinda"
                 android:orientation="vertical"
                 android:padding="16dp">
 
@@ -120,7 +120,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorUno"
+                android:background="@color/guinda"
                 android:orientation="vertical"
                 android:padding="16dp">
 
