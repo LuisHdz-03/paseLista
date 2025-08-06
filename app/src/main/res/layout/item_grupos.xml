@@ -24,7 +24,8 @@
             android:id="@+id/tv_asistenciasTotales"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:layout_marginBottom="7dp"/>
         <TextView
             android:id="@+id/tv_faltasTotales"
             android:layout_width="wrap_content"
