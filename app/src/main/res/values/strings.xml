@@ -28,6 +28,6 @@
     <string name="txtalumno">Sube una imagen del alumno</string>
     <string name="selctimgalumno">Seleccionar Imagen</string>
 
-    <string name="grups">Grupos asignados</string>
+    <string name="grups">Grupo:</string>
 
 </resources>

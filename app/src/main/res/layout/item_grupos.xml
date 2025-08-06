@@ -6,31 +6,42 @@
     android:layout_marginBottom="16dp"
     card_view:cardCornerRadius="12dp"
     card_view:cardElevation="10dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/guinda"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:background="@color/guinda">
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/grups"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tv_grupos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/white" />
+
         <TextView
             android:id="@+id/tv_asistenciasTotales"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:layout_marginBottom="7dp"/>
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/white" />
+
         <TextView
             android:id="@+id/tv_faltasTotales"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
