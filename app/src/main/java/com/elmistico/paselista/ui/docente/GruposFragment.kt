@@ -17,13 +17,14 @@ class GruposFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_grupos, container, false)
         val rcview = view.findViewById<RecyclerView>(R.id.rv_grupos)
-        rcview.layoutManager =LinearLayoutManager(requireContext())
+        rcview.layoutManager = LinearLayoutManager(requireContext())
         val grups = listOf(
-            grupos("Sistemas 2025-1",12,8),
-            grupos("Sistemas 2025-2",12,10),
-            grupos("Nose 2025-2",3,1),
-            grupos("Tampoco se 2025-2",30,2)
+            grupos("Sistemas 2025-1", 12, 8),
+            grupos("Sistemas 2025-2", 12, 10),
+            grupos("Nose 2025-2", 3, 1),
+            grupos("Tampoco se 2025-2", 30, 2)
         )
+        rcview.adapter = Adapt(grups)
         return view
     }
 }

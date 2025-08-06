@@ -10,18 +10,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/guinda"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:background="@color/guinda">
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/tv_materia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:layout_marginBottom="8dp" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_asistencias"
