@@ -3,17 +3,14 @@
     <item
         android:id="@+id/nav_grupasignados"
         android:icon="@drawable/ic_group"
-        android:title="Grupos" />
+        android:title="@string/grupos" />
     <item
         android:id="@+id/nav_list"
         android:icon="@drawable/ic_list"
-        android:title="Listas" />
+        android:title="@string/listas" />
     <item
         android:id="@+id/nav_checkList"
         android:icon="@drawable/ic_passlist"
-        android:title="Pase de lista" />
-    <item
-        android:id="@+id/nav_report"
-        android:icon="@drawable/ic_report"
-        android:title="Reportar" />
+        android:title="@string/reportes" />
+
 </menu>

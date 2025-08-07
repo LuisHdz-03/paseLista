@@ -30,4 +30,8 @@
 
     <string name="grups">Grupo:</string>
 
+    <string name="grupos">Grupos</string>
+    <string name="listas">Pase de lista</string>
+    <string name="reportes">Reportar</string>
+
 </resources>
