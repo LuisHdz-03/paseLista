@@ -33,5 +33,6 @@
     <string name="grupos">Grupos</string>
     <string name="listas">Pase de lista</string>
     <string name="reportes">Reportar</string>
+    <string name="usuario">Perfil</string>
 
 </resources>
