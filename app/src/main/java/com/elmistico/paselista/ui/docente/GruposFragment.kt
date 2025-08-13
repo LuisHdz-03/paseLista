@@ -16,6 +16,7 @@ class GruposFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_grupos, container, false)
+
         val rcview = view.findViewById<RecyclerView>(R.id.rv_grupos)
         rcview.layoutManager = LinearLayoutManager(requireContext())
         val grups = listOf(

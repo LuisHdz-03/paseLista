@@ -23,6 +23,7 @@ class DocenteHomeActivity : AppCompatActivity() {
             }
             when (item.itemId) {
                 R.id.nav_grupasignados -> LoadFragment(GruposFragment())
+                R.id.nav_list -> LoadFragment(ListasFragment())
             }
             true
         }

@@ -34,5 +34,7 @@
     <string name="listas">Pase de lista</string>
     <string name="reportes">Reportar</string>
     <string name="usuario">Perfil</string>
+    <string name="tomarlista">Tomas Lista</string>
+    <string name="pdf">Generar PDF</string>
 
 </resources>
