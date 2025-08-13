@@ -24,6 +24,8 @@ class DocenteHomeActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.nav_grupasignados -> LoadFragment(GruposFragment())
                 R.id.nav_list -> LoadFragment(ListasFragment())
+                R.id.nav_report -> LoadFragment(RepotesFragment())
+                R.id.nav_perfil -> LoadFragment(PerfilDocenteFragment())
             }
             true
         }
