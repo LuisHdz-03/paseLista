@@ -37,4 +37,7 @@
     <string name="tomarlista">Tomas Lista</string>
     <string name="pdf">Generar PDF</string>
 
+    <string name="genReporte">Generar nuevo reporte</string>
+    <string name="buscar">Introduce nombre \no matrícula</string>
+
 </resources>
