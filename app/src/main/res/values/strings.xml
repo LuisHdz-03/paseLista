@@ -38,6 +38,7 @@
     <string name="pdf">Generar PDF</string>
 
     <string name="genReporte">Generar nuevo reporte</string>
-    <string name="buscar">Introduce nombre \no matrícula</string>
+    <string name="buscar">Introduce nombre o matrícula</string>
+    <string name="Motivos">Ingrese el motivo del reporte</string>
 
 </resources>

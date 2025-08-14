@@ -49,17 +49,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
-                    android:text="solo pa4ra ver como se ve"
+                    android:text="solo para ver como se ve"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="ingrese el motivo"
+                    android:hint="@string/Motivos"
                     android:inputType="textMultiLine" />
 
-
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded"
+                    android:text="Generar reporte"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"/>
 
 
             </LinearLayout>
