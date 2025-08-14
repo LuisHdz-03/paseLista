@@ -40,5 +40,6 @@
     <string name="genReporte">Generar nuevo reporte</string>
     <string name="buscar">Introduce nombre o matrícula</string>
     <string name="Motivos">Ingrese el motivo del reporte</string>
+    <string name="btngenReporte">Generar reporte</string>
 
 </resources>
