@@ -45,18 +45,21 @@
                     android:queryHint="@string/buscar" />
 
                 <TextView
+                    android:id="@+id/txt_alumno_reporte"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingBottom="8dp"
-                    android:text=""
+                    android:paddingBottom="10dp"
+                    android:text="solo pa4ra ver como se ve"
                     android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textSize="18sp" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="ingrese el motivo"
                     android:inputType="textMultiLine" />
+
+
 
 
             </LinearLayout>
