@@ -15,6 +15,8 @@
     <string name="resasistencias">Resumen de asistencias</string>
     <string name="refaltas">Resumen: Faltas de tareas</string>
     <string name="reincidencias">Resumen: Incidencias</string>
+    <string name="btnBT">Habilitar Bluetooth para pase de lista</string>
+    <string name="contenteIMG">Imagen del qr del alumno</string>
 
     <string name="infocrede">Informacion sobre la credencial</string>
     <string name="print_id">Imprimir credencial</string>
@@ -43,4 +45,5 @@
     <string name="btngenReporte">Generar reporte</string>
 
     <string name="perfil">Perfil</string>
+
 </resources>
