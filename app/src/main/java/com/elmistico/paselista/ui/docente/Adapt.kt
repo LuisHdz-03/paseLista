@@ -156,27 +156,4 @@ class GrupoAdapter(
     }
 }
 
-class PerfilAdapter(private val perfiles: List<Perfil>) :
-    RecyclerView.Adapter<PerfilAdapter.PerfilViewHolder>() {
 
-    class PerfilViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val tvNombre: TextView = view.findViewById(R.id.nombreDocente)
-        val tvCorreo: TextView = view.findViewById(R.id.correoDocente)
-        val tvTotalGrupos: TextView = view.findViewById(R.id.totalGrupos)
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PerfilViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.fragment_perfil_docente, parent, false)
-        return PerfilViewHolder(view)
-    }
-
-    override fun onBindViewHolder(holder: PerfilViewHolder, position: Int) {
-        val perfil = perfiles[position]
-        holder.tvNombre.text = "👤 Nombre: ${perfil.nombre}"
-        holder.tvCorreo.text = "📧 Correo: ${perfil.correo}"
-        holder.tvTotalGrupos.text = "👥 Total de grupos: ${perfil.totalGrupos}"
-    }
-
-    override fun getItemCount(): Int = perfiles.size
-}
