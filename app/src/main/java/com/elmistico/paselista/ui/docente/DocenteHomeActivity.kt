@@ -9,18 +9,25 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DocenteHomeActivity : AppCompatActivity() {
 
+    private lateinit var nav: BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_docente_home)
 
-        LoadFragment(GruposFragment())
+        nav = findViewById(R.id.bootom_nav_docente)
 
-        val nav = findViewById<BottomNavigationView>(R.id.bootom_nav_docente)
+        if (savedInstanceState == null) {
+
+            nav.selectedItemId = R.id.nav_grupasignados
+        }
+
         nav.setOnItemSelectedListener { item ->
             val view = nav.findViewById<View>(item.itemId)
             view.animate().scaleX(1.2f).scaleY(1.2f).setDuration(150).withEndAction {
                 view.animate().scaleX(1f).scaleY(1f).duration = 150
             }
+
             when (item.itemId) {
                 R.id.nav_grupasignados -> LoadFragment(GruposFragment())
                 R.id.nav_list -> LoadFragment(ListasFragment())
@@ -29,11 +36,27 @@ class DocenteHomeActivity : AppCompatActivity() {
             }
             true
         }
+        if (savedInstanceState == null) {
+
+            nav.selectedItemId = R.id.nav_grupasignados
+        }
     }
+
 
     private fun LoadFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container_docente, fragment)
             .commit()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt("selected_nav_item", nav.selectedItemId)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        val selectedItem = savedInstanceState.getInt("selected_nav_item", R.id.nav_grupasignados)
+        nav.selectedItemId = selectedItem
     }
 }

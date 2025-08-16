@@ -45,6 +45,7 @@ sealed class ItemLista {
     data class FooterItem(val grupo: Grupo) : ItemLista()
 }
 
+
 class GrupoAdapter(
     private val items: MutableList<ItemLista>
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -153,4 +154,29 @@ class GrupoAdapter(
         items.subList(position + 1, position + 1 + count).clear()
         notifyItemRangeRemoved(position + 1, count)
     }
+}
+
+class PerfilAdapter(private val perfiles: List<Perfil>) :
+    RecyclerView.Adapter<PerfilAdapter.PerfilViewHolder>() {
+
+    class PerfilViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val tvNombre: TextView = view.findViewById(R.id.nombreDocente)
+        val tvCorreo: TextView = view.findViewById(R.id.correoDocente)
+        val tvTotalGrupos: TextView = view.findViewById(R.id.totalGrupos)
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PerfilViewHolder {
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.fragment_perfil_docente, parent, false)
+        return PerfilViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: PerfilViewHolder, position: Int) {
+        val perfil = perfiles[position]
+        holder.tvNombre.text = "👤 Nombre: ${perfil.nombre}"
+        holder.tvCorreo.text = "📧 Correo: ${perfil.correo}"
+        holder.tvTotalGrupos.text = "👥 Total de grupos: ${perfil.totalGrupos}"
+    }
+
+    override fun getItemCount(): Int = perfiles.size
 }

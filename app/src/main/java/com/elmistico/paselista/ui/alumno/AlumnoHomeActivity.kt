@@ -9,18 +9,20 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class AlumnoHomeActivity : AppCompatActivity() {
 
+    private lateinit var bottomNav: BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alumnohome)
 
-        loadFragment(homeFragment())
+        bottomNav = findViewById(R.id.bottom_nav)
 
-        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav)
         bottomNav.setOnItemSelectedListener { item ->
             val view = bottomNav.findViewById<View>(item.itemId)
             view.animate().scaleX(1.2f).scaleY(1.2f).setDuration(150).withEndAction {
                 view.animate().scaleX(1f).scaleY(1f).duration = 150
             }
+
             when (item.itemId) {
                 R.id.nav_home -> loadFragment(homeFragment())
                 R.id.nav_credencial -> loadFragment(VerCredencialFragment())
@@ -29,6 +31,10 @@ class AlumnoHomeActivity : AppCompatActivity() {
             }
             true
         }
+
+        if (savedInstanceState == null) {
+            bottomNav.selectedItemId = R.id.nav_home
+        }
     }
 
     private fun loadFragment(fragment: Fragment) {
@@ -36,5 +42,15 @@ class AlumnoHomeActivity : AppCompatActivity() {
             .replace(R.id.fragment_container, fragment)
             .commit()
     }
-}
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt("selected_nav_item", bottomNav.selectedItemId)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        val selectedItem = savedInstanceState.getInt("selected_nav_item", R.id.nav_home)
+        bottomNav.selectedItemId = selectedItem
+    }
+}

@@ -42,4 +42,5 @@
     <string name="Motivos">Ingrese el motivo del reporte</string>
     <string name="btngenReporte">Generar reporte</string>
 
+    <string name="perfil">Perfil</string>
 </resources>
