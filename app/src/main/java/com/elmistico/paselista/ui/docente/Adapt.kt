@@ -132,10 +132,19 @@ class GrupoAdapter(
             is ItemLista.FooterItem -> {
                 val footerHolder = holder as FooterViewHolder
                 footerHolder.btnTomarLista.setOnClickListener {
-                    //ps aqui se pone la accion xd
+                    footerHolder.btnTomarLista.setOnClickListener {
+                        val context = it.context
+                        if (context is androidx.fragment.app.FragmentActivity) {
+                            TkLtBtnSheet().show(
+                                context.supportFragmentManager,
+                                "TomarListaDialog"
+                            )
+                        }
+                    }
+
                 }
                 footerHolder.btnPDF.setOnClickListener {
-                    //aqui igual xd
+                    //ps aqui se pone la accion xd
                 }
             }
         }
